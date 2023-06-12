@@ -29,6 +29,7 @@ main .inner {
   height: 100%;
   background-color: #fbfaff;
   border-top-left-radius: 32px;
+  padding: 4.8rem 3.2rem;
 }
 
 main {
@@ -59,4 +60,81 @@ a:hover {
 }
 a ion-icon {
   font-size: 2rem;
+}
+
+section.title-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 2.4rem;
+}
+
+.title-avatar > img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  border: 0.5px solid #000;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* session filter */
+
+section.filter {
+  margin-top: 3.2rem;
+  padding: 0 2.4rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.filter button {
+  padding: 1.2rem 3.2rem;
+  border: none;
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.filter button span {
+  text-shadow: 0rem 0.4rem 1.6rem rgba(22, 22, 22, 1);
+  font-size: 1.4rem;
+}
+.filter button ion-icon {
+  font-size: 2.4rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 0.07rem solid #e3e3e3;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(22, 22, 22, 0.1);
+  border-radius: 0.8rem;
+  padding: 0 2.4rem;
+  flex: 1;
+}
+
+.wrapper ion-icon {
+  font-size: 2.4rem;
+  color: #505059;
+}
+.wrapper input {
+  border: 0;
+  width: 100%;
+  outline: 0;
+}
+.wrapper:has(:focus) {
+  outline: 0.2rem solid black;
+}
+
+.wrapper input::placeholder {
+  font-size: 1.6rem;
+  color: #7c7c8a;
 }
